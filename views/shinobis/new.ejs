@@ -22,7 +22,7 @@
         <% } %>
     </nav>
     <h1>Add Ninja</h1>
-    <form action="/shinobis" method="POST">
+    <form action="/shinobis" method="POST" enctype="multipart/form-data">
         <label>Name:</label>
         <input type="text" name="name">
         <label>Village</label>
@@ -39,6 +39,8 @@
         <input type="number" name="age">
         <label>Favorite Jutsu!</label>
         <input type="text" name="jutsu">
+        <label for="image">Upload Image</label>
+        <input type="file" id="image" name="img" value="" required>
         <input id='add' type="submit" value="Add Ninja">
     </form>
 </body>

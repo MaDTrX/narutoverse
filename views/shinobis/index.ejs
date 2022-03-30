@@ -30,8 +30,37 @@
             <td>
                 <a href="shinobis/<%=s._id%>" class="ninjas"> <%= s.name %> </a>
             </td>
+            <td>
+                        <div>
+                           <% if (s.data) { %>
+                                <img src="data:image/<%=s.contentType%>;base64,
+                                     <%=s.data.toString('base64')%>"  width="320" height="240">
+
+                            </video>
+                           <% } %>
+                        </div>
+                               
+                                  
+            </td>
             <% }) %>
         </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </table>
             
   

@@ -27,14 +27,14 @@ const chatSchema = new Schema({
 
 
 
-const shinobiSchema = new Schema ({
+const shinobiSchema = new Schema({
     name: {
         type: String,
         required: true,
     },
     village: {
         type: String,
-        required: true 
+        required: true
     },
     age: {
         type: Number,
@@ -46,6 +46,9 @@ const shinobiSchema = new Schema ({
         type: String,
         required: true,
     },
+    data: Buffer,
+    contentType: String,
+    
     chats: [chatSchema]
 }, {
     timestamps: true
